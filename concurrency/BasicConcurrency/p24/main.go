@@ -21,6 +21,9 @@ func main() {
 }
 
 /*
+I am in main routine
+I am in the goroutine
+
 So first we acquire the lock on line 9 and then we cannot hold another lock on line 11.
 The lock is released on line 16 after printing I am in main routine on to the console.
 Only then, the goroutine is able to acquire the lock on line 11 and print I am in the goroutine

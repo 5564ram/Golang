@@ -16,8 +16,8 @@ func fibonacci(n int) chan int {
 }
 
 func main() {
-
-	for i := range fibonacci(10) {
+	val := fibonacci(10)
+	for i := range val {
 		//do anything with the nth term while the fibonacci()
 		//is computing the next term
 		fmt.Println(i)
